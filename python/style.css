@@ -3,6 +3,10 @@ body {
     overflow: hidden;
 }
 
+ul, li {
+    list-style: none;
+}
+
 .company_wrapper {
     position: relative;
     top: 100px;
@@ -57,5 +61,20 @@ body {
     position: absolute;
     bottom: 5px;
     right: 40px;
+    font-weight: bold;
+}
+
+.search_box {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 900px;
+    border-radius: 50px;
+}
+
+.search_title {
+    text-align: center;
+    font-size: 25px;
     font-weight: bold;
 }
