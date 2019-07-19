@@ -1,0 +1,61 @@
+body {
+    font-family: 'NanumSquare', sans-serif;
+    overflow: hidden;
+}
+
+.company_wrapper {
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.company {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(90, 178, 255);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.394);
+}
+
+.company_cover {
+    width: 500px;
+    height: 300px;
+    background-color: rgba(25, 25, 25, 0.462);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.company_cover p {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 40px;
+    left: 30px;
+    margin: 0;
+}
+
+.company_info {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(112, 143, 255);
+    border-radius: 30px;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.394);
+}
+
+.company_item {
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
+    font-weight: bold;
+}
