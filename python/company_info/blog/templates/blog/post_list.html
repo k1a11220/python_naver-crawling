@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <title>기업정보매칭</title>
+</head>
+
+<body>
+    <div class="company_wrapper">
+        <div class="company">
+            <div class="company_cover">
+                <p>삼성전기</p><br/>
+                <p>기술직 채용</p>
+            </div>
+            <img style="width: 100%;" src="http://www.samsungcareers.com/bbsfiles/samsung/2019/14068.jpg" alt="#">
+        </div>
+        <div class="company_info">
+            <p class="company_item">자세히보기</p>
+        </div>
+        <div class="search_box">
+            <li style="text-align:center;">
+                <ul>
+                    <p class="search_title">맞춤공고 검색하기!</p>
+                </ul>
+                <ul>
+                    <p class="company_selector">산업&업종</p>             
+                    <select style="width: 150px; text-align:center;" name="직무, 직군">
+                        <option value="">기계</option>
+                        <option value="">기계설계</option>
+                        <option value="">기구설계</option>
+                        <option value="">회로설계</option>
+                        <option value="">전기설계</option>
+                    </select>
+                </ul>
+                <ul>
+                    <p class="company_selector">학력</p>
+                    <select style="width: 150px; text-align:center;" name="직무, 직군">
+                            <option value="">고졸</option>
+                            <option value="">대졸</option>
+                            <option value="">기타</option>
+                    </select>
+                </ul>
+                <ul>
+                    <p class="company_selector">경력</p>
+                    <select style="width: 150px; text-align:center;" name="직무, 직군">
+                            <option value="">신입</option>
+                            <option value="">1~2년</option>
+                            <option value="">3년이상</option>
+                    </select>
+                </ul>
+                <ul>
+                    <button style="position: relative; top:150px;">검색하기!</button>
+                </ul>
+            </li>
+        </div>
+    </div>
+</body>
+
+</html>
