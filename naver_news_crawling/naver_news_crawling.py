@@ -10,7 +10,7 @@ from datetime import datetime
 - 결과 메모장 저장 -> 엑셀로 저장 
 
 '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-RESULT_PATH = 'D:/python study/beautifulSoup_ws/crawling_result/'
+RESULT_PATH = 'C:/Users/k1a11/Desktop/git/hitech_python/naver_news_crawling/results/'
 now = datetime.now() #파일이름 현 시간으로 저장하기
 
 def get_news(n_url):
@@ -42,7 +42,7 @@ def crawler(maxpage,query,s_date,e_date):
     e_to = e_date.replace(".","")
     page = 1
     maxpage_t =(int(maxpage)-1)*10+1   # 11= 2페이지 21=3페이지 31=4페이지  ...81=9페이지 , 91=10페이지, 101=11페이지
-    f = open("D:/python study/beautifulSoup_ws/crawling_result/contents_text.txt", 'w', encoding='utf-8')
+    f = open("C:/Users/k1a11/Desktop/git/hitech_python/naver_news_crawling/results/contents_text.txt", 'w', encoding='utf-8')
     
     while page < maxpage_t:
     
@@ -86,8 +86,10 @@ def main():
     maxpage = input("최대 출력할 페이지수 입력하시오: ") 
     query = input("검색어 입력: ")
     s_date = input("시작날짜 입력(2019.01.01):")  #2019.01.01
-    e_date = input("끝날짜 입력(2019.04.28):")   #2019.04.28
+    e_date = input("끝날짜 입력")  
     crawler(maxpage,query,s_date,e_date) #검색된 네이버뉴스의 기사내용을 크롤링합니다. 
     
     excel_make() #엑셀로 만들기 
 main()
+
+
